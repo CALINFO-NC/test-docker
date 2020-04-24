@@ -1,0 +1,11 @@
+version: '2' # Garder la compatibilité avec les stacks de docker 
+  
+services:
+
+  springboot-admin:
+    image: calinfo-docker-local.jfrog.io/com.calinfo-nc.app-springboot-admin:latest
+    environment:
+      - SPRINGBOOT_ADMIN_USER:admin
+      - SPRINGBOOT_ADMIN_PASSWORD:"password"
+    ports:
+      - 8080
